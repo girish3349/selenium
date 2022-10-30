@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class OpenWebDriver {
+public class OpenBrowser {
 	
 	@Test
 	public void startUp() {
@@ -16,7 +16,7 @@ public class OpenWebDriver {
 		
 		// Traditional way
 		
-		System.setProperty("webdriver.chrome.driver", "./browserDrivers/chromedriver.exe")
+		System.setProperty("webdriver.chrome.driver", "./browserDrivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://google.com");
